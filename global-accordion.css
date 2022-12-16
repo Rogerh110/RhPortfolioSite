@@ -1,0 +1,124 @@
+.project-accordion {
+    margin-bottom: 5.5vh;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.accordion {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 1rem;
+    /* background: rgba(229, 240, 212, 1); */
+    /* background: rgba(240, 250, 230, 1); */
+    background: rgb(255, 255, 255);
+    transition: transform 0.75s ease;
+    z-index: auto;
+
+}
+
+
+.accordion-label {
+    padding: 2.5vh 2.5vw;
+    display: block;
+    font-weight: 500;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.35s ease-in;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.accordion-label::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+    right: auto;
+    width: 18px;
+    height: 9px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23323232D9;" /></svg>');
+    background-size: contain;
+    transition: transform 0.5s ease;
+}
+
+.accordion-content {
+    padding: 0 5.5vw 5.5vh;
+    line-height: 1.5;
+    width: 65vw;
+    display: none;
+}
+
+.accordion-content h3 {
+    color: rgba(50, 50, 50, 0.5);
+    color: #155263E6;
+    font-weight: 400;
+    padding: 1.5rem 0 0.25rem;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-input:checked~.accordion-content {
+    display: block;
+
+}
+
+.accordion-input:checked~.accordion {
+    background: rgba(218, 242, 194, 0.35);
+}
+
+
+.accordion-input:checked~.accordion-label::after {
+    transform: translateY(-50%) rotate(540deg);
+}
+
+
+
+p {
+    color: rgba(50, 50, 50, 0.75);
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .project-accordion {
+        width: 90vw;
+    }
+
+    .accordion-content {
+        width: 85vw;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .project-accordion {
+        margin-bottom: 2.5vh;
+        width: 90vw;
+    }
+
+    .accordion-label {
+        padding: 3vh 5vw;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .accordion-label::after {
+        top: 45px;
+        width: 15px;
+        height: 7.5px;
+    }
+
+    .accordion-content {
+        width: 90vw;
+    }
+}

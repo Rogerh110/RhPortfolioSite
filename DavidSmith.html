@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fields of David Smith</title>
+    <link rel="stylesheet" href="DavidSmith.css">
+
+    <link rel="stylesheet" href="global-nav-header.css">
+    <link rel="stylesheet" href="global-page-wrapper.css">
+    <link rel="stylesheet" href="global-footer.css">
+    <link rel="stylesheet" href="global-accordion.css">
+    <link rel="stylesheet" href="global-project-header.css">
+    <link rel="stylesheet" href="global-masonry-figure.css">
+    <link rel="stylesheet" href="BackToTop-btn.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+        </header>
+        <!-- PAGE TITLE -->
+        <h1 class="home-button"><a href="index.html">Roger Hong</a></h1>
+        <!-- CHECKBOX -->
+        <input class="checkbox" type="checkbox"></input>
+        <!-- HAMBURGER LINES -->
+        <div class="hamburger">
+            <div class="wrapper">
+                <div class="lines"></div>
+            </div>
+        </div>
+        <!-- MAIN MENU -->
+        <nav class="menu" id="menu">
+            <a class="link-btn" href="index.html" id="style-2" data-replace="Work"><span>Work</span></a>
+            <a class="link-btn" href="about.html" id="style-2" data-replace="About"><span>About</span></a>
+        </nav>
+
+        <div class="project-header">
+            <img src="Projects/davidsmith/mockup02.png" alt="">
+            <div class="header">
+
+            </div>
+        </div>
+
+        <!-- project description -->
+        <section class="project-accordion">
+            <div class="accordion">
+                <input type="checkbox" name="project-detail-accordion" id="prject-detail" class="accordion-input">
+                <label for="prject-detail" class="accordion-label">The Fields of David Smith &nbsp </label>
+                <div class="accordion-content">
+                    <div class="about">
+                        <h3>About</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptatibus dolore
+                            expedita eos consectetur molestias incidunt aperiam dolores reprehenderit consequatur ipsum
+                            harum, nobis, aspernatur eius accusantium ab sed provident rerum!
+                            Eum magnam, ipsum odio adipisci laboriosam assumenda aliquid accusantium molestias quod
+                            voluptates laudantium ipsa magni quas, distinctio iusto! Quod alias dignissimos minima
+                            quibusdam tenetur earum cumque blanditiis fuga aliquid nesciunt.
+                        </p>
+                    </div>
+                    <!-- <div class="challange">
+                        <h3>Challenge & Constraints</h3>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="solution">
+                        <h3>Solution</h3>
+                        <p>Lorem ipsum</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        </section>
+        <h2>Final Product</h2>
+        <div class="masonry">
+            <figure class="fig-1">
+                <img src="Projects/davidsmith/mockup01.jpg" alt="mockup01">
+            </figure>
+            <figure class="fig-2">
+                <img src="Projects/davidsmith/mockup02.png" alt="mockup02">
+            </figure>
+        </div>
+
+        <h2>Poster Detail</h2>
+        <img class="poster" src="Projects/davidsmith/mockup03.png" alt="Poster Detail">
+        </section>
+
+        <div class="footer">
+            <div class="info">© 2022 Roger Hong </div>
+            <div class="info"><a class="home" href="home.html">rogerhong.com</a></div>
+            <div class="info">
+                <span class="info-span" onclick="copy(this)">
+                    +1 (312)-871-1915</span>
+                <br>
+                <span class="info-span" onclick="copy(this)">
+                    rogerhong110@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <a onclick="topFunction()" id="myBtn" title=""><img class="back-to-top" src="images/backToTop.svg" alt=""></a>
+    <script src="close-menu.js"></script>
+
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+    <script src="BackToTop-btn.js"></script>
+
+    <script>
+        function copy(that) {
+            var inp = document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value = that.textContent
+            inp.select();
+            document.execCommand('copy', false);
+            inp.remove();
+        }
+    </script>
+</body>
+
+
+</html>

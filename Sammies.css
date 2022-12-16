@@ -1,0 +1,23 @@
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2.5vh;
+}
+
+
+
+.fig-1 {
+    grid-column: 1 /7;
+    grid-row: 1 / 2;
+}
+
+.fig-2 {
+    grid-column: 1 /5;
+    grid-row: 2 / 3;
+}
+
+.fig-3 {
+    grid-column: 5 /7;
+    grid-row: 2 / 3;
+}

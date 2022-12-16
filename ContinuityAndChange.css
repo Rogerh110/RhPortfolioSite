@@ -1,0 +1,90 @@
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 2.5vh;
+}
+
+
+.fig-1 {
+    grid-column: 1 /7;
+    grid-row: 1 / 2;
+}
+
+.fig-2 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.fig-3 {
+    grid-column: 4 / 7;
+    grid-row: 2 / 3;
+}
+
+.fig-4 {
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+}
+
+.fig-5 {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+}
+
+.fig-6 {
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+}
+
+.fig-7 {
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+}
+
+
+.poster {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .fig-1 {
+        grid-column: 1 /7;
+        grid-row: 1 / 2;
+    }
+
+    .fig-2 {
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+    }
+
+    .fig-3 {
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+    }
+
+    .fig-4 {
+        grid-column: 1 / 7;
+        grid-row: 3 / 4;
+    }
+
+    .fig-5 {
+        grid-column: 1 / 7;
+        grid-row: 4 / 5;
+    }
+
+    .fig-6 {
+        grid-column: 1 / 7;
+        grid-row: 5 / 6;
+    }
+
+    .fig-7 {
+        grid-column: 1 / 7;
+        grid-row: 6 / 7;
+    }
+}

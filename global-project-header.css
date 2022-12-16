@@ -1,0 +1,35 @@
+.project-header {
+    display: flex;
+    /* margin-top: 12.25vh; */
+    /* margin-bottom: 2.5vh; */
+    width: 75vw;
+    height: 80vh;
+    margin: 12.25vh 0 -5.5vh;
+    z-index: -1;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-header img {
+    max-height: 80vh;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .project-header {
+        width: 90vw;
+        height: 80vh;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .project-header {
+        width: 90vw;
+        height: 80vw;
+        margin: 15vh 0 2.5vh;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="global-nav-header.css">
+    <link rel="stylesheet" href="global-page-wrapper.css">
+    <link rel="stylesheet" href="global-footer.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+        </header>
+        <!-- PAGE TITLE -->
+        <h1 class="home-button"><a href="index.html">Roger Hong</a></h1>
+        <!-- CHECKBOX -->
+        <input class="checkbox" id="checkboxInput" type="checkbox"></input>
+        <!-- HAMBURGER LINES -->
+        <div class="hamburger">
+            <div class="wrapper">
+                <div class="lines"></div>
+            </div>
+        </div>
+        <!-- MAIN MENU -->
+        <nav class="menu" id="menu">
+            <a class="link-btn" href="index.html" id="style-2" data-replace="Work"><span>Work</span></a>
+            <a class="link-btn" href="#about" id="style-2" data-replace="About"><span>About</span></a>
+        </nav>
+
+        <div class="about" id="about">
+            <figure>
+                <img src="images/portrait.jpg" alt="">
+            </figure>
+            <div class="about-text">
+                <h2>Hi, I'm Roger. <br>
+                    Welcome to my website :)
+                </h2>
+                <p>I'm a Taiwanese digital designer/ artist based in Chicago. I'm currently a senior student pursuing my
+                    bachelor's degree in Visual Communication Design at the School of the Art Institute of Chicago. I
+                    specialize in identity design and UI/UX design. </p>
+                <a href="https://drive.google.com/file/d/1nu8dac-wKVLARFKliKiMWsWo3LfugVdj/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">Résumé</a>
+                <a href="https://drive.google.com/file/d/1Q1GwjfUY17l_xalLMymKENyVdjbV4d1q/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">Portfolio</a>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Let's work together
+            </h2>
+
+            <p>I am available for internship/ full-time positions and freelance opportunities in the field of
+                graphic design, and UI/UX design. <br> Feel free to reach out! Let's create something together!</p>
+        </div>
+
+        <div class="footer">
+            <div class="info">© 2022 Roger Hong </div>
+            <div class="info"><a class="home" href="home.html">rogerhong.com</a></div>
+            <div class="info">
+                <span class="info-span" onclick="copy(this)">
+                    +1 (312)-871-1915</span>
+                <br>
+                <span class="info-span" onclick="copy(this)">
+                    rogerhong110@gmail.com</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+
+    <script>
+        var checkbox = document.querySelector('#checkboxInput');
+        var icon = document.querySelector('#menu');
+        var listener = function (e) {
+            if (e.target != checkbox && e.target != icon) {
+                checkbox.checked = false;
+                document.removeEventListener('click', listener);
+            }
+        };
+
+        checkbox.addEventListener('click', function () {
+            if (this.checked) {
+                document.addEventListener('click', listener);
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+.hero-section {
+    /* background: rgb(225, 225, 225, 1); */
+    display: flex;
+    margin-top: 12.25vh;
+    margin-bottom: 2.5vh;
+    width: 100%;
+    height: 85.5vh;
+    animation: heroanimation 10s infinite;
+    border-radius: 15px;
+    margin-right: 0;
+    /* z-index: -10; */
+
+    background-image: url(images/blobanimation\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-size: 180vh;
+    background-position: 50% 5%;
+    backdrop-filter: blur(15px);
+
+}
+
+
+@keyframes heroanimation {
+    0% {
+        background-color: #ffc93c4D;
+    }
+
+    25% {
+        background-color: #ff9a3c4D;
+    }
+
+    50% {
+        background-color: #ff6f3c4D;
+    }
+
+    75% {
+        background-color: #ff9a3c4D;
+    }
+
+    100% {
+        background-color: #ffc93c4D;
+    }
+}
+
+
+.intro {
+    margin: auto;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #155263E6;
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+.intro p {
+    color: rgb(55, 55, 55, 0.85);
+    font-size: 1.2rem;
+}
+
+
+
+
+.scrolldown-wrapper {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.scrolldown {
+    border: 2px solid rgba(245, 245, 245, 0.75);
+    border-radius: 30px;
+    height: 44px;
+    margin: 0 auto 8px;
+    text-align: center;
+    width: 28px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+    animation-duration: 1.5s;
+    animation-name: scrolldown;
+    animation-iteration-count: infinite;
+    fill: rgba(245, 245, 245, 0.75);
+}
+
+.scrolldown-p2 {
+    animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+    0% {
+        opacity: 0;
+        transform: translate(0, 8px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, -8px);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .hero-section {
+        height: 85.5vh;
+
+    }
+}
+
+
+@media (max-width: 767px) {
+    .hero-section {
+        /* margin-top: 10.25vh; */
+        margin-top: 2.25vh;
+        height: 95.5vh;
+
+        background-size: 120vh;
+        background-position: 35% -15%;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+
+}

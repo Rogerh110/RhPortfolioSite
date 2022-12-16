@@ -1,0 +1,330 @@
+header {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 85vw;
+    height: 10vh;
+    /* margin-bottom: 2.5vh; */
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 15px 15px;
+
+    z-index: 40;
+
+    box-shadow: 0px 3px 10PX rgba(55, 55, 55, 0.10);
+}
+
+
+
+
+.home-button a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22pt;
+    /* color: rgb(55, 55, 55, 0.85); */
+    color: #155263E6;
+
+    position: fixed;
+    top: 2.25vh;
+    left: 9.25vw;
+    transition: 0.25s ease;
+
+    z-index: 55;
+}
+
+.home-button a:hover {
+    color: #ff9a3c;
+}
+
+/* Hamburger Menu */
+.checkbox,
+.hamburger {
+    position: fixed;
+    top: 2.25vh;
+    right: 9vw;
+    width: 45px;
+    height: 45px;
+
+}
+
+.checkbox {
+    opacity: 0;
+    cursor: pointer;
+
+    z-index: 55;
+}
+
+.hamburger {
+    /* background: rgba(245, 245, 245, 0); */
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 10px;
+
+    z-index: 50;
+}
+
+.hamburger .wrapper {
+    background: none;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.hamburger .wrapper .lines {
+    /* background-color: rgb(55, 55, 55, 0.85); */
+    background-color: #155263E6;
+    position: relative;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+
+}
+
+
+.hamburger .wrapper .lines::before,
+.hamburger .wrapper .lines::after {
+    /* background-color: rgb(55, 55, 55, 0.85); */
+    background-color: #155263E6;
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.hamburger .wrapper .lines::before {
+    top: -10px;
+}
+
+.hamburger .wrapper .lines::after {
+    top: 10px;
+}
+
+.checkbox:checked+.hamburger .wrapper {
+    transform: rotate(135deg);
+}
+
+.checkbox:checked+.hamburger .wrapper .lines::before {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.checkbox:checked+.hamburger .wrapper .lines::after {
+    opacity: 0;
+}
+
+.checkbox:checked:hover+.hamburger .wrapper {
+    transform: rotate(225deg);
+}
+
+.menu {
+    /* background-color: rgba(225, 225, 225, 0.15); */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -14vw;
+    width: 14vw;
+    /* height: 100vh; */
+    transition: 0.75s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 30px 0 0 0;
+
+    z-index: 45;
+
+}
+
+.menu a {
+    color: transparent;
+    background: none;
+    text-decoration: none;
+    /* width: 80px; */
+    /* padding: 0px 10px; */
+    margin: 1.25vh auto 1.25vh 2.5vw;
+    /* text-align: left; */
+    transition: 0.35s ease;
+}
+
+.menu a:first-child {
+    margin-top: 120px;
+}
+
+.checkbox:checked~.menu {
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: rgba(240, 240, 240, 0.2);
+    backdrop-filter: blur(15px);
+    right: 0;
+    transition: 0.35s ease;
+
+}
+
+.checkbox:checked~.menu a {
+    /* color: rgba(55, 55, 55, 0.85); */
+    color: #155263E6;
+    /* font-weight: 500; */
+    right: 0;
+}
+
+
+
+
+
+.link-btn {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    /* font-family: 'Mukta', sans-serif; */
+    /* font-size: larger; */
+    /* color: rgba(50, 50, 50, 0.85); */
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.link-btn::before,
+.link-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+
+}
+
+.link-btn::before {
+    background-color: #ff9a3c;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .35s cubic-bezier(0.76, 0, 0.24, 1);
+    border-radius: 3px;
+}
+
+.link-btn::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #ff9a3c;
+    font-weight: 400;
+}
+
+.link-btn:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+.link-btn:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.link-btn span {
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #155263E6;
+    font-weight: 400;
+}
+
+.link-btn:hover span {
+    transform: translate3d(-200%, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    header {
+        width: 90vw;
+    }
+
+    .checkbox,
+    .hamburger {
+        position: fixed;
+        top: 2.5vh;
+        right: 6.25vw;
+
+    }
+
+    .home-button a {
+        left: 6.5vw;
+    }
+
+    .menu {
+        right: -20vw;
+        width: 20vw;
+    }
+
+    .menu a {
+        margin: 1.25vh 7vw 1.25vh auto;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+
+    header {
+        top: 2.25vh;
+        width: 90vw;
+        border-radius: 15px;
+        height: 10vh;
+    }
+
+    .checkbox,
+    .hamburger {
+        top: 4.25vh;
+        right: 10vw;
+    }
+
+    .home-button a {
+        top: 4.5vh;
+        left: 10.5vw;
+    }
+
+    .menu {
+        right: -95vw;
+        width: 95vw;
+        height: 95.5vh;
+        margin: auto 0;
+        border-radius: 15px 0 0 15px;
+
+        font-size: 2rem;
+        font-weight: 300;
+
+    }
+
+    .menu a {
+        margin: 2.5vh auto;
+
+    }
+
+    .menu a:first-child {
+        margin-top: 40vh;
+    }
+
+
+
+    .link-btn {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+}
