@@ -80,6 +80,10 @@ img {
     .contact {
         padding: 5vh 40vw 5vh 7.5vw;
     }
+
+    .contact p {
+        width: 85%;
+    }
 }
 
 
@@ -111,11 +115,17 @@ img {
 
     }
 
+
+
+    .about-text p {
+        padding-bottom: 15px;
+    }
+
     .contact {
         padding: 15px;
     }
 
-    .about-text p {
-        padding-bottom: 15px;
+    .contact p {
+        width: 100%;
     }
 }
