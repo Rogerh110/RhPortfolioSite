@@ -1,27 +1,29 @@
 h2 {
     /* line-height: 2.2rem; */
     padding-bottom: 12.5px;
-    color: #155263E6;
+    color: #24408e;
 }
 
 .about {
-    margin-top: 12.5vh;
-    padding: 0vh 10vw;
-    width: 100%;
+    margin: 12.5vh auto 0 auto;
+    padding: 0vh 20px;
+    width: 80%;
     display: flex;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     align-items: center;
     justify-content: center;
+    /* background-color: #ff6f3c; */
 }
 
 .about-text {
-    width: 55%;
-    margin: auto 20px;
+    width: 50%;
+    margin: auto;
     padding: 15px;
+    /* background-color: #24408e; */
 }
 
 .about-text a {
-    color: #ff9a3c;
+    color: #24408e;
     padding: 0 15px 0 0;
     transition: 0.35s ease;
 }
@@ -36,23 +38,27 @@ h2 {
 }
 
 figure {
+    margin: auto 0;
     display: block;
-    width: auto;
-    height: 50vh;
-    border-radius: 15px;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 10px;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: fill;
+    /* object-position: right bottom; */
+    /* background-color: #ff6f3c; */
 }
 
 img {
-    width: auto;
-    height: 100%;
-    border-radius: 15px;
-
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .contact {
-    padding: 5vh 10vw;
+    height: 35vh;
+    padding: 5.5vh 10vw;
+    /* background-color: #ff6f3c; */
 }
 
 .contact p {
@@ -70,19 +76,28 @@ img {
 
     .about-text {
         width: 50%;
-        margin: 2.5vh 0;
+        margin: 2.5vh auto;
     }
 
     figure {
-        margin: auto 0;
+        margin: 5vh 0 0 0;
+        width: 35vh;
+        height: 35vh;
     }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+
 
     .contact {
         padding: 5vh 40vw 5vh 7.5vw;
     }
 
     .contact p {
-        width: 85%;
+        width: 90%;
     }
 }
 
@@ -103,18 +118,16 @@ img {
 
     figure {
         margin-top: 2.5vh;
-        width: 90vw;
+        width: 75vw;
         height: auto;
         /* max-height: 75vh; */
     }
 
+
     img {
         width: 100%;
-        height: auto;
-        border-radius: 15px;
-
+        border-radius: 10px;
     }
-
 
 
     .about-text p {

@@ -3,6 +3,9 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr);
     column-gap: 2.5vh;
+    align-content: center;
+    width: 90%;
+    margin: auto;
 }
 
 .fig-1 {
@@ -87,21 +90,21 @@
     font-size: 1.2rem;
     font-weight: 400;
     text-decoration: none;
-    color: #155263E6;
+    color: #24408e;
     transition: 0.15s ease;
 }
 
 .fa-file-pdf-o {
-    color: #155263E6;
+    color: #24408e;
     transition: 0.15s ease;
 }
 
 .pdf-link a:hover {
-    color: #ff9a3c;
+    color: #ff6f3c;
     transition: 0.15s ease;
 }
 
 .pdf-link a:hover>.fa-file-pdf-o {
-    color: #ff9a3c;
+    color: #ff6f3c;
     transition: 0.15s ease;
 }

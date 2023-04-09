@@ -6,6 +6,7 @@ h2 {
 
 
 figure {
+
     width: 100%;
     max-height: 85vh;
     display: flex;
@@ -16,7 +17,7 @@ img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 3px 3px 15px rgba(50, 50, 50, 0.075);
 }
 

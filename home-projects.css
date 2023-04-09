@@ -3,7 +3,7 @@
     width: 100%;
     padding: 14.25vh 5vw 0 5vw;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .project-wrapper {
@@ -19,7 +19,7 @@
     display: block;
     width: 35vw;
     height: 38.5vh;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -47,7 +47,7 @@
     transition: 0.35s ease-in-out;
     object-fit: cover;
     object-position: center;
-    border-radius: 15px;
+    border-radius: 10px;
     transition: 0.35s ease;
 
 }
@@ -62,20 +62,19 @@
 
 
 .project-caption {
-    margin: 0 10px;
-    width: 35%;
-    padding: 15px;
+    margin: 0 15px;
+    width: 40%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-
 }
 
 .project-category,
 .project-year,
 .project-desc {
     color: rgba(55, 55, 55, 0.55);
-    font-size: 1rem;
-    width: 90%;
+    font-size: 0.85rem;
+    width: 95%;
     line-height: 1.2rem;
 }
 
@@ -83,12 +82,11 @@
 .project-title a {
     text-decoration: none;
     margin-top: 0.5rem;
-    font-weight: 500;
-    color: #155263E6;
+    font-weight: 600;
+    color: #24408e;
 
-
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
 }
 
 .project-year {
@@ -168,7 +166,8 @@
         width: 100%;
         height: 80vw;
         padding: 30px 15px;
-        border: 3px solid rgba(55, 55, 55, 0.05);
+        border: 2px solid rgba(235, 235, 235, 0.5);
+
         border-radius: 15px;
     }
 
