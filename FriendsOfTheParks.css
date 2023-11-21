@@ -1,7 +1,7 @@
 .masonry {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     column-gap: 2.5vh;
     align-content: center;
     width: 90%;
@@ -58,7 +58,7 @@
     grid-row: 6/7;
 }
 
-.fig-11 {
+/* .fig-11 {
     grid-column: 1/5;
     grid-row: 7/8;
 }
@@ -76,7 +76,7 @@
 .fig-13 {
     grid-column: 3/7;
     grid-row: 8/9;
-}
+} */
 
 
 
